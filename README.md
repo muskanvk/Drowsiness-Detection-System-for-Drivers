@@ -3,7 +3,7 @@ Driver drowsiness detection is a car safety Technology which helps prevent accid
 
 # Work-Flow
 If a face is found, we apply facial landmark detection and extract the eye regions. Now that we have the eye regions, we can compute the eye aspect ratio (detailed here) to determine if the eyes are closed. f the eye aspect ratio indicates that the eyes have been closed for a sufficiently long enough amount of time, we’ll sound an alarm to wake up the driver.
-T
+
 ## Algorithm
 Python’s dlib library uses Kazemi and Sullivan’s One Millisecond Face Alignment with an Ensemble of Regression Trees to implement the eye blink feature on the face.The program uses a facial training set to understand where certain points exist on facial structures. The program then plots the same points on region of interests in other images, if they exists. The program uses priors to estimate the probable distance between keypoints.
 
@@ -15,7 +15,7 @@ In Real Time Eye Blinking Using Facial Landmarks, Soukupová and Čech derive an
 
 “The Eye Aspect Ratio is a constant value when the eye is open, but rapidly falls to 0 when the eye is closed. It is calculated by the given formula.
 
-<img src="https://github.com/muskanvk/Drowsiness-Detection-System-for-Drivers/blob/master/Images/EAR.jpg">
+<img src="https://github.com/muskanvk/Drowsiness-Detection-System-for-Drivers/blob/master/Images/EAR.png">
 
 ## Dependencies
 The example code is in Python (version 2.7 or higher will work).The `shape_predictor_68_face_landmarks.dat` is mentioned in the code. You can find it on `[Shape Predictor 68 features](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)`
@@ -24,14 +24,15 @@ The example code is in Python (version 2.7 or higher will work).The `shape_predi
 
 
     numpy==1.16.6
-	dlib==19.19.0
-	imutils==0.5.3
-	opencv_python==4.2.0.32
-	scipy==1.2.3
-	playsound==1.2.2
+    dlib==19.19.0
+    imutils==0.5.3
+    opencv_python==4.2.0.32
+    scipy==1.2.3
+    playsound==1.2.2
+
 Use `pip install -r requirements.txt`to install the given requirements.
 
-##Usage 
+## Usage 
 There are two files : `alarm_detection.py` and `drowsiness_detection.py` The former uses an alarm to detect a drowsy driver and the latter displays the alert on screen.
 
 You can run the script using :
@@ -50,7 +51,7 @@ According to available statistical data, over 1.3 million people die each year o
 2. Behavioral measures—The behavior of the driver, including yawning, eye closure, eye blinking, head pose, etc., is monitored through a camera 
    and the driver is alerted if any of these drowsiness symptoms are detected.
 
-3. Physiological measures—The correlation between physiological signals (electrocardiogram (ECG), electromyogram (EMG), electrooculogram (EoG)
+3. Physiological measures—The correlation between physiological signals (electrocardiogram (ECG), electromyogram (EMG),  electrooculogram (EoG)
    and electroencephalogram (EEG)) and driver drowsiness has been studied by many researchers.
 
    Although a drowsiness and a fatigue detection system is very crucial, yet it has its own limitations.
@@ -61,8 +62,7 @@ According to available statistical data, over 1.3 million people die each year o
 
 3. When the model is completely built and be used for the real monitoring system, the device used for monitoring  is  only  a  set  of  cameras.  But  when  we  are  in  the  process  of  model  building  (to  define appropriate formula and threshold to define alertness level), we have to use an intrusive device in the driver.  The  device  usually  is  like  a  cap  with  wires  and  pads  that  should  be  patched  on  the  face  and head  area.  This  device  can  be  used  to  measure  the  eyes  characteristics  precisely  instead  of  only counting on visual monitoring. This device also can disrupt image capturing process.
 
-4. 
-Last but not least challenges of these processes are individual differences. Everybody has his own characteristics,  including  an  eye  and  face.  For  instance,  there  is  a  person  with  round  eyes versus slanted  eyes,  long versus short  eye  lace,  and  also  expressive versus nonexpressive  person. These differences make model formulation more complicated.
+4. Last but not least challenges of these processes are individual differences. Everybody has his own characteristics,  including  an  eye  and  face.  For  instance,  there  is  a  person  with  round  eyes versus slanted  eyes,  long versus short  eye  lace,  and  also  expressive versus nonexpressive  person. These differences make model formulation more complicated.
 
 ## Where is this kind of a system deployed ?
 
