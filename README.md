@@ -69,8 +69,12 @@ Although a drowsiness and a fatigue detection system is very crucial, yet it has
 ## Where is this kind of a system deployed ?
 <p style="text-align:justify">
 1. https://www.optalert.com/
+     
 2. https://www.tataelxsi.com/industries/automotive/automotive-electronics/casestudies/driver-drowsiness-detection-system.html
+
 3. https://www.mercedesbenzofchandler.com/mercedes-benz-attention-assist/
+
 4. https://www.bosch-mobility-solutions.com/en/products-and-services/passenger-cars-and-light-commercial-vehicles/driver-assistance-systems/driver-drowsiness-detection/
+
 5. https://www.indiatoday.in/technology/news/story/nissan-introduces-drowsiness-detection-feature-247009-2015-04-03
 </p>
