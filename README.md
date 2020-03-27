@@ -42,6 +42,7 @@ There are two files : `alarm_detection.py` and `drowsiness_detection.py` The for
 You can run the script using :
 
 `python drowsiness detection.py` /for detection without a sound alert
+
 `python alarm_detection.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm alarm.wav`  /for detection with a sound alert  
 
 # Limitations of the system
