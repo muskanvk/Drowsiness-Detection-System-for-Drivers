@@ -8,7 +8,7 @@ If a face is found, we apply facial landmark detection and extract the eye regio
 Python’s dlib library uses Kazemi and Sullivan’s One Millisecond Face Alignment with an Ensemble of Regression Trees to implement the eye blink feature on the face.The program uses a facial training set to understand where certain points exist on facial structures. The program then plots the same points on region of interests in other images, if they exists. The program uses priors to estimate the probable distance between keypoints.
 
 
-<img src="https://github.com/muskanvk/Drowsiness-Detection-System-for-Drivers/blob/master/Images/Facial_LandmarksPlot.jpg">
+<img src="https://github.com/muskanvk/Drowsiness-Detection-System-for-Drivers/blob/master/Images/Facial_LandmarkPlot.jpg">
 
 
 In Real Time Eye Blinking Using Facial Landmarks, Soukupová and Čech derive an equation that represents the Eye Aspect Ratio. The Eye Aspect Ratio is an estimate of the eye opening state. The algorithm is based on calculating an eye aspect ratio(EAR) which I will explain further. Each eye is represented by 6 (x, y)-coordinates, starting at the left-corner of the eye (as if you were looking at the person), and then working clockwise around the eye.It checks 20 consecutive frames and if the Eye Aspect ratio is less than 0.25, Alert is generated. 
@@ -48,18 +48,8 @@ You can run the script using :
 	`--alarm alarm.wav`          /for detection with a sound alert  
 
 # Limitations of the system
-According to available statistical data, over 1.3 million people die each year on the road and 20 to 50 million people suffer non-fatal injuries due to road accidents. Majority of these accidents happen due to a driver sleeping behind the wheel. A driver who falls asleep at the wheel loses control of the vehicle, an action which often results in a crash with either another vehicle or stationary objects. In order to prevent these devastating accidents, the state of drowsiness of the driver should be monitored. The following measures have been used widely for monitoring drowsiness:
-
-1. Vehicle-based measures—A number of metrics, including deviations from lane position, movement of the steering wheel, pressure on the
-   acceleration pedal, etc., are constantly monitored and any change in these that crosses a specified threshold indicates a significantly increased probability that the driver is drowsy.
-
-2. Behavioral measures—The behavior of the driver, including yawning, eye closure, eye blinking, head pose, etc., is monitored through a camera 
-   and the driver is alerted if any of these drowsiness symptoms are detected.
-
-3. Physiological measures—The correlation between physiological signals (electrocardiogram (ECG), electromyogram (EMG),  electrooculogram (EoG)
-   and electroencephalogram (EEG)) and driver drowsiness has been studied by many researchers.
-
-   Although a drowsiness and a fatigue detection system is very crucial, yet it has its own limitations.
+According to available statistical data, over 1.3 million people die each year on the road and 20 to 50 million people suffer non-fatal injuries due to road accidents. Majority of these accidents happen due to a driver sleeping behind the wheel. A driver who falls asleep at the wheel loses control of the vehicle, an action which often results in a crash with either another vehicle or stationary objects. In order to prevent these devastating accidents, the state of drowsiness of the driver should be monitored. 
+Although a drowsiness and a fatigue detection system is very crucial, yet it has its own limitations.
 
 1. In the process of modeling, the researcher has to handle many challenging conditions that sometimes disturb and distract the process of gathering and analyzing data.  For devices that have to capture the face and eye appearance, any condition that can cover face are undesirable. For instance, when the driver does not face towards the front,  when  lighting  conditions  are  lacking,  when  driver  wears  accessories  such  as  hats  and  glasses; the camera will not be able to capture the characteristics of the eyes and face.Beside camera, there are types of equipment attached to the face and other body regions to detect muscle  contraction  and  eye  activities  (blinking,  iris  movement, etc).
 
