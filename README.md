@@ -42,9 +42,7 @@ There are two files : `alarm_detection.py` and `drowsiness_detection.py` The for
 You can run the script using :
 
 `python drowsiness detection.py` /for detection without a sound alert
-`python alarm_detection.py`
-`--shape-predictor shape_predictor_68_face_landmarks.dat \`
-`--alarm alarm.wav`          /for detection with a sound alert  
+`python alarm_detection.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm alarm.wav`  /for detection with a sound alert  
 
 # Limitations of the system
 According to available statistical data, over 1.3 million people die each year on the road and 20 to 50 million people suffer non-fatal injuries due to road accidents. Majority of these accidents happen due to a driver sleeping behind the wheel. A driver who falls asleep at the wheel loses control of the vehicle, an action which often results in a crash with either another vehicle or stationary objects. In order to prevent these devastating accidents, the state of drowsiness of the driver should be monitored. 
