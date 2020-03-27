@@ -1,13 +1,10 @@
 # Drowsiness-Detection-System-for-Drivers
-<p style="text-align:justify">
-Driver drowsiness detection is a car safety Technology which helps prevent accidents caused by the driver getting drowsy. The following code uses computer vision to observe the driver's face, either using a built-in camera or on mobile devices. It is responsible for 72,000 crashes, 44,000 injuries, and 800 deaths annually in the US. When driver fatigue or drowsiness is detected, the system alerts the driver to prevent possible accidents. 
-</p>
-<p style="text-align:justify">
+<p style="text-align:justify">Driver drowsiness detection is a car safety Technology which helps prevent accidents caused by the driver getting drowsy. The following code uses computer vision to observe the driver's face, either using a built-in camera or on mobile devices. It is responsible for 72,000 crashes, 44,000 injuries, and 800 deaths annually in the US. When driver fatigue or drowsiness is detected, the system alerts the driver to prevent possible accidents. </p>    
 # Work-Flow
-If a face is found, we apply facial landmark detection and extract the eye regions. Now that we have the eye regions, we can compute the eye aspect ratio to determine if the eyes are closed. If the eye aspect ratio indicates that the eyes have been closed for a sufficiently long enough amount of time, we’ll sound an alarm to wake up the driver.
-</p>
-<p style="text-align:justify">
+<p style="text-align:justify">If a face is found, we apply facial landmark detection and extract the eye regions. Now that we have the eye regions, we can compute the eye aspect ratio to determine if the eyes are closed. If the eye aspect ratio indicates that the eyes have been closed for a sufficiently long enough amount of time, we’ll sound an alarm to wake up the driver.</p>
+
 ## Algorithm
+<p style="text-align:justify">
 Python’s dlib library uses Kazemi and Sullivan’s One Millisecond Face Alignment with an Ensemble of Regression Trees to implement the eye blink feature on the face.The program uses a facial training set to understand where certain points exist on facial structures. The program then plots the same points on region of interests in other images, if they exists. The program uses priors to estimate the probable distance between keypoints.
 </p>
 <p align="center">
