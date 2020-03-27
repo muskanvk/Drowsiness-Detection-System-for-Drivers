@@ -6,7 +6,7 @@ If a face is found, we apply facial landmark detection and extract the eye regio
 
 ## Algorithm
 Python’s dlib library uses Kazemi and Sullivan’s One Millisecond Face Alignment with an Ensemble of Regression Trees to implement the eye blink feature on the face.The program uses a facial training set to understand where certain points exist on facial structures. The program then plots the same points on region of interests in other images, if they exists. The program uses priors to estimate the probable distance between keypoints.
-
+<p align="center">
 
 <img src="https://github.com/muskanvk/Drowsiness-Detection-System-for-Drivers/blob/master/Images/Facial_LandmarkPlot.png">
 
