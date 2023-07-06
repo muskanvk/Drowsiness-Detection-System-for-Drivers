@@ -2,5 +2,5 @@ numpy==1.22.0
 dlib==19.19.0
 imutils==0.5.3
 opencv_python==4.2.0.32
-scipy==1.2.3
+scipy==1.10.0
 playsound==1.2.2
